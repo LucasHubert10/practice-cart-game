@@ -1,0 +1,4 @@
+.cartas-frente{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.ui {
+    font-family: "viaoda libre";
+    padding: 16px 0;
+    display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.ui:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ui+.ui {
+    padding-top: 0px;
+}
+
+.ui h1,
+.ui h2,
+.ui h3,
+.ui h4,
+.ui h5,
+.ui h6 {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.ui button {
+    background: #F139F1;
+    color: white;
+    border-radius: 5px;
+    font-family: "viaoda libre";
+    font-size: 20px;
+    height: 48px;
+    width: 150px;;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+
+.ui button:hover {
+    background: #591459;
+    
+}
+
+.ui button:active,
+.ui button.pressed {
+   
+    background: #BF2ABF;
+}
+
+.ui input,
+.ui textarea {
+    
+    background: #fff;
+    margin: 4px 0;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: "viaoda libre";
+    width: 300px;
+    padding: 16px;
+    height: 48px;
+}
+
+.ui input+button,
+.ui textarea+button {
+    margin: 4px 0;
+}
+
+.ui textarea {
+    min-height: 100px;
+}
+
+
+.ui.container {
+ 
+    background: #fff;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.84);
+    border: none;
+    margin: 4px 0;
+    padding: 16px;
+    margin: 0 0 24px;
+    padding: 16px;
+    line-height: 1.42;
+    font-size: 16px;
+}
+
+
+.ui.container.no-padding,
+.ui.container.list {
+    padding: 0;
+}
+
+.ui.container p:last-child {
+    margin-bottom: 0;
+}
+
+.ui.container p:first-child {
+    margin-top: 0;
+}
+
+.ui.heading {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+
+
+.ui.toolbar {
+   
+    background: #efefef;
+    color: rgba(0, 0, 0, 0.84);
+    border: none;
+    margin: 4px 0;
+    padding: 16px;
+  
+    margin: 0;
+    padding: 0;
+    height: 48px;
+    align-items: space-between;
+    justify-items: flex-end;
+}
+
+
+.ui.dropdown {
+    flex-direction: column;
+}
+
+.ui.dropdown button,
+.ui.dropdown ul {
+    width: 100%;
+}
+
+.ui.dropdown ul {
+    padding-top: 8px;
+}
+
+.ui.dropdown button {
+    background: #efefef;
+    position: relative;
+    z-index: 11;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ui.dropdown button:active {
+    background: #d6d6d6;
+}
+
+.ui.dropdown button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 24px;
+    top: 8px;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+    width: 4px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.84);
+   
+}
+
+.ui.dropdown ul {
+    position: relative;
+    z-index: 10;
+    margin: -4px 0 0 0;
+}
+
+.ui .button-group button+button,
+.ui.button-group button+button {
+    margin-left: 0;
+}
+
+.ui .button-group button+button:active,
+.ui.button-group button+button:active {
+    margin-left: 0;
+}
+
+
+
+.page {
+    width: 100%;
+    min-height: 100%;
+    overflow: auto;
+    padding: 24px;
+    margin: auto;
+    
+}
+
+.page section {
+    max-width: 640px;
+    margin: auto;
+}
+
+.grid {
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+    background-size: 16px 16px;
+}
+.ui-heading-wrapper,
+h1
+ {
+font-size: 60px;
+color: white;
+}
+.intro{
+    flex-direction: column;
+}
+.cartas-frente{
+    width: 100%;
+}
+.cartas-frente,
+img{
+    height: 300px;
+    margin: 10px;
+}
+.cartas-frente,
+figure{
+    display: flex;
+    justify-content: center;
+}
+.ui-wrapperindicadores{
+    justify-content: space-between;
+
+}
+
+.ui,
+h1,
+h2{
+    flex-direction: column;
+}

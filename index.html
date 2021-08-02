@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/pixel.css">
+    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Adivinar la carta</title>
+</head>
+
+<body>
+    <!-- Login -->
+    <div class="page">
+        <section class="intro">
+            <div class="ui heading wrapper">
+                <h1>Bienvenido </h1>
+                <h2>Ingresá tu nombre</h2>
+            </div>
+
+            <div class="ui input wrapper">
+                <input id="nombreInput" type="text" placeholder="Tu nombre" />
+                <button id="login" class="flat">Comenzar</button>
+            </div>
+        </section>
+        <!-- Instrucciones -->
+        <section class="instructions hide">
+            <div class="ui heading wrapper">
+                <h1>Hola, <span id="nombre"></span> </h1>
+            </div>
+            <div class="instrucciones">
+                <h2>Instrucciones:</h2>
+
+            </div>
+            <div class="ui container inset">
+                <p>
+                    Te vamos a mostrar 3 cartas diferentes.
+                    <br>
+                    Vas a tener que adivinar donde está el As de corazones
+                    <br>
+                    Cada vez que falles, las cartas cambian de lugar
+                    <br>
+                </p>
+            </div>
+            <div class="ui wrapper">
+                <button id="comenzar">
+                    <span>Comenzar</span>
+                    <span class="icon arrow-right">
+                </button>
+            </div>
+        </section>
+        <!-- Juego -->
+        <section class="game hide">
+            <div class="ui wrapperindicadores">
+                <div class="indicador-intentos"> Intentos: <span id="intentos"> </span>
+                </div>
+                <div id="cartel" class="ui container inset hide">
+                    <p>
+                        ¡Oh no!
+                        <br>
+                        Vuelve a intentarlo... todavia tenes chance
+                    </p>
+                </div>
+            </div>
+
+            <div class="cartas frente">
+                <figure>
+                    <figcaption class="corazon">
+                        <img src="imgorazones.png" class="carta1Frente" alt="corazones">
+                    </figcaption>
+                    <figcaption class="trebol">
+                        <img src="imgrebol.png" class="carta2Frente" alt="trebol">
+                    </figcaption>
+                    <figcaption class="diamante">
+                        <img src="imgiamante.png" class="carta3Frente" alt="diamante">
+                    </figcaption>
+
+                </figure>
+            </div>
+            <div class="cartas espalda hide">
+                <figure>
+                    <figcaption class="carta1">
+                        <img src="imgspalda.png" id="cora" class="coraSrc" alt="espalda 1">
+                    </figcaption>
+                    <figcaption class="carta2">
+                        <img src="imgspalda-1.png" id="treb" class="trebolSrc" alt="espalda 2">
+                    </figcaption>
+                    <figcaption class="carta3">
+                        <img src="imgspalda-2.png" id="diam" class="diamSrc" alt="espalda 3">
+                    </figcaption>
+
+                </figure>
+            </div>
+        </section>
+
+
+        <!-- Ganaste -->
+        <section class="win hide">
+
+            <div class="ui wrapper">
+                <h1> Felicidades </h1>
+                <h2>Superaste mis habilidades</h2>
+            </div>
+
+            <div class="ui input wrapper">
+                <button id="botonReintentar" class="flat">Volver a jugar</button>
+            </div>
+        </section>
+
+        <!-- Perdiste -->
+        <section class="gameover hide">
+            <div class="ui wrapper">
+                <h1> ¡Oh no! </h1>
+                <h2>Perdiste</h2>
+            </div>
+            <div class="ui input wrapper">
+                <button id="botonReintentar2" class="flat">Volver a jugar</button>
+            </div>
+        </section>
+
+        <script src="jsquery-3.6.0.min.js"></script>
+        <script src="js/guess.js">
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+/* Si hay que ocultar o mostrar puedo agregar o quitar estas clases */
+.hide{
+    display: none !important;
+}
+.destacado{
+    color: red;
+}
+/* Layout general */
+.page{
+    height: 100vh;
+    background-image: url("../img/fondo.jpg");
+}
+.intro,
+.instructions,
+.game,
+.win,
+.gameover
+
+{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+.indicadores,
+.game{
+    width: 100%;
+}
+.indicador-intentos{
+    font-family: "viaoda libre";
+    font-size: 24px;
+    height: 48px;
+    text-align: left;
+    line-height: 1;
+    margin-top: 4px;
+    color: white;
+    border: none;
+    margin: 4px 0;
+    padding: 16px;
+    margin-right: 90px;
+   
+    
+}
+.indicador-pistas{
+    background: white;
+    color: rgba(0, 0, 0, 0.84);
+    border: none;
+    margin: 4px 0;
+    padding: 16px;
+    font-family: "Press Start 2P", cursive;
+    height: 48px;
+    text-align: left;
+    line-height: 1;
+    margin-top: 4px;
+    margin-left: 16px;
+    white-space: nowrap;
+    margin-left: auto;
+}
+.win,
+.gameover{
+    width: 100%;
+}
+
